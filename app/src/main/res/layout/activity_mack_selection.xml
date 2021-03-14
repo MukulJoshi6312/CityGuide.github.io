@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Comman.LoginSignup.MackSelectionActivity"
+    android:background="@color/white"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:onClick="back_pressed_to_password_forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/general_back_icon"
+            app:tint="@color/black"
+            android:padding="5dp"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mack_selection"
+            android:textColor="@color/black"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textSize="40sp"
+            android:textAllCaps="true"
+            android:layout_marginTop="30dp"
+
+           />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/mack_selection_detail" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/lightWhite"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/mobile_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/mobile_icon"
+                app:tint="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/todo" />
+            <TextView
+                android:id="@+id/mobile_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textSize="25sp"
+                android:layout_marginTop="35dp"
+                android:text="@string/via_sms"
+                android:layout_toRightOf="@+id/mobile_icon" />
+
+            <TextView
+                android:id="@+id/mobile_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textSize="25sp"
+                android:layout_below="@+id/mobile_title"
+                android:textColor="@color/black"
+                android:text="+923332225533"
+                android:layout_toRightOf="@+id/mobile_icon" />
+
+            <Button
+                android:onClick="verifiyViaMessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/lightWhite"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/email_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/email_icon_forgot_password"
+                app:tint="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/todo" />
+            <TextView
+                android:id="@+id/email_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textSize="25sp"
+                android:layout_marginTop="35dp"
+                android:text="@string/via_email"
+                android:layout_toRightOf="@+id/email_icon" />
+
+            <TextView
+                android:id="@+id/email_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textSize="25sp"
+                android:layout_below="@+id/email_title"
+                android:textColor="@color/black"
+                android:text="abcd@gmail.com"
+                android:layout_toRightOf="@+id/email_icon" />
+
+            <Button
+                android:onClick="verifiyViaEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

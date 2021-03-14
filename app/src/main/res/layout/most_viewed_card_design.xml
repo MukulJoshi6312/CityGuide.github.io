@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="8dp"
+    android:layout_margin="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/mv_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/mcd"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/mv_title"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="McDonald's"
+            android:layout_toRightOf="@+id/mv_image"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/ubuntu_bold"/>
+
+        <RatingBar
+            android:id="@+id/mv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_below="@+id/mv_title"
+            android:rating="4"
+            android:layout_toRightOf="@+id/mv_image"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/mv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="this is dummy text McDonald's is the best place to eating the burgure"
+            android:layout_below="@+id/mv_rating"
+            android:layout_toRightOf="@+id/mv_image"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:textSize="14sp"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
